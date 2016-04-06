@@ -4,7 +4,9 @@
   "description": "Website for cars at web",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "start -d": "node --debug=5858 app.js",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,22 @@
   "bugs": {
     "url": "https://github.com/marcosmoresco/webcar/issues"
   },
-  "homepage": "https://github.com/marcosmoresco/webcar"
+  "homepage": "https://github.com/marcosmoresco/webcar",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "ecstatic": "^1.4.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.4",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.1",
+    "log4js": "^0.6.33",
+    "moment": "^2.12.0",
+    "restify": "^4.0.4",
+    "webpack-stream": "^3.1.0"
+  }
 }
