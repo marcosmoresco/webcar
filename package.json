@@ -4,7 +4,7 @@
   "description": "Website for cars at web",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "npm run build && node app.js",
     "start:d": "node --debug=5858 app.js",
     "build": "gulp --env=dev",
     "build:p": "gulp --env=prod"
