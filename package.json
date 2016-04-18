@@ -5,8 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "start -d": "node --debug=5858 app.js",
-    "build": "gulp"
+    "start:d": "node --debug=5858 app.js",
+    "build": "gulp --env=dev",
+    "build:p": "gulp --env=prod"
   },
   "repository": {
     "type": "git",
@@ -19,20 +20,27 @@
   },
   "homepage": "https://github.com/marcosmoresco/webcar",
   "dependencies": {
+    "babel-preset-react": "^6.5.0",
     "bootstrap": "^3.3.6",
-    "ecstatic": "^1.4.0",
+    "jquery": "^2.2.3",
+    "log4js": "^0.6.33",
+    "moment": "^2.12.0",
+    "nodemailer": "^2.3.2",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "restify": "^4.0.4"
+  },
+  "devDependencies": {
+    "webpack-stream": "^3.1.0",
     "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.3",
+    "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^2.0.4",
     "gulp-concat": "^2.6.0",
     "gulp-jshint": "^2.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.2.0",
     "gulp-uglify": "^1.5.3",
-    "gulp-util": "^3.0.7",
-    "jshint": "^2.9.1",
-    "log4js": "^0.6.33",
-    "moment": "^2.12.0",
-    "restify": "^4.0.4",
-    "webpack-stream": "^3.1.0"
+    "gulp-util": "^3.0.7"
   }
 }

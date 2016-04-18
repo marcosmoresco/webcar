@@ -11,3 +11,8 @@ server.get('/index/:name', function(req, res, next) {
   res.send(req.params);
   return next();
 });
+
+server.get('/favicon.ico', restify.serveStatic({
+  'directory': 'public/images',
+  'file': 'favicon.ico'
+}));
