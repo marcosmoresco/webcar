@@ -7,6 +7,7 @@ var server = require('./config/server.js'),
  * Run server
  */
 
-server.listen(5000, function() {
+logger.info(process.env.PORT);
+server.listen((process.env.PORT || 3000), function() {
   logger.info('%s listening at %s', server.name, server.url);
 });
