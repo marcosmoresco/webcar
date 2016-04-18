@@ -6,8 +6,8 @@
   "scripts": {
     "start": "npm run build && node app.js",
     "start:d": "node --debug=5858 app.js",
-    "build": "gulp --env=dev",
-    "build:p": "gulp --env=prod"
+    "build": "./node_modules/gulp/bin/gulp.js --env=dev",
+    "build:p": "./node_modules/gulp/bin/gulp.js --env=prod"
   },
   "repository": {
     "type": "git",
